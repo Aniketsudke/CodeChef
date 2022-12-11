@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+void fun1(int X,int Y, int K){
+    int m = X,n=0;
+	    while(m<Y){
+	        m += K;
+	        n++;
+	    };
+	    cout<<n<<endl;
+}
+int main() {
+	int T,X,Y,K;
+	cin>>T;
+	while(T--){
+	    cin>>X>>Y>>K;
+	    if(X>Y){
+	        fun1(Y,X,K);
+	    }
+	    else{
+	        fun1(X,Y,K);
+	    }
+	    
+	}
+	return 0;
+}
